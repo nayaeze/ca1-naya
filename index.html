@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<form action="http://localhost:3000/api/submit-form" target="_blank" method="POST">
+<label for="catName">Cat Name</label>
+<input id="catName" name="catName" type="text">
+<input type="submit" value="Submit">
+</form>
+
+
+<button id="ShowKtnBtn" >Show Kittens!</button>
+<p id="Kittylog"></p>
+
+<br>
+<form action="http://localhost:3000/api/cats" target="_blank" method="POST">
+    <label for="cat2rep">Kitten to Replace:</label>
+    <input type="text" name="cat2rep" id="cat2rep">
+    <label for="catrep">Replacement: </label>
+    <input type="text" name ="catrep" id="cat2rep">
+    <br>
+    <input type="submit" value="Submit">
+</form>
+<br>
+<form action="http://localhost:3000/api/cat-function" target ="_blank" method="POST">
+
+<button style="width: 100px; height: 100px;" id="KillBtn" type="submit">DELETE ALL CATS</button>
+
+</form>
+<script src="app.mjs"></script>
+<script src="frontend.js"></script>
+
+
+
+</body>
+</html>
